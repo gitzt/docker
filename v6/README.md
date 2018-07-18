@@ -13,6 +13,13 @@ docker run -d --name dubbo-admin -p 8080:8080 \
 -e "guest_passwd=" \
 10.13.0.63:5000/dubbo-admin
 
+# redis
+docker build --rm -t 10.13.0.63:5000/redis:3.2.9 .
+
+docker run -d --name redis -p 6379:6379 \
+-v $PWD/redis.conf:/usr/local/redis/etc/redis.conf \
+10.13.0.63:5000/redis:3.2.9
+
 
 
 
