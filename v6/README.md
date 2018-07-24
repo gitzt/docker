@@ -12,6 +12,7 @@ docker run -d --name dubbo-admin -p 8080:8080 \
 -e "root_passwd=" \
 -e "guest_passwd=" \
 10.13.0.63:5000/dubbo-admin
+
 参数：
 zk_server：必填，格式为 IP：PORT
 root_passwd：选填，默认为root/root
