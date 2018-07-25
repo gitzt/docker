@@ -1,4 +1,4 @@
-
+# tomcat
 docker build --rm -t redhat-with-tomcat .
 
 docker run -d --name tomcat -p 8080:8080 \

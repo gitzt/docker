@@ -1,6 +1,6 @@
 
 # openjre
-docker build --rm -t openjre7 -f /openjdk7/Dockerfile .
+docker build --rm -t openjre7 -f openjdk7/Dockerfile .
 
 # tomcat
 docker build --rm -t alpine-with-tomcat .
